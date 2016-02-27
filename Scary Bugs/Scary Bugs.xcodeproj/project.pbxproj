@@ -59,7 +59,7 @@
 		A2A3BCC41C81AA6A006BE4BC /* prayingMantis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prayingMantis.jpg; sourceTree = "<group>"; };
 		A2A3BCC51C81AA6A006BE4BC /* roach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roach.jpg; sourceTree = "<group>"; };
 		A2A3BCC61C81AA6A006BE4BC /* robberFly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = robberFly.jpg; sourceTree = "<group>"; };
-		A2A3BCC71C81AA6A006BE4BC /* ScaryBug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaryBug.swift; sourceTree = "<group>"; };
+		A2A3BCC71C81AA6A006BE4BC /* ScaryBug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScaryBug.swift; path = "Challenge Resources/ScaryBug.swift"; sourceTree = "<group>"; };
 		A2A3BCC81C81AA6A006BE4BC /* scorpion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scorpion.jpg; sourceTree = "<group>"; };
 		A2A3BCC91C81AA6A006BE4BC /* shieldBug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shieldBug.jpg; sourceTree = "<group>"; };
 		A2A3BCCA1C81AA6A006BE4BC /* shockedface2_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_empty.png; sourceTree = "<group>"; };
@@ -108,7 +108,6 @@
 				A2A3BCC41C81AA6A006BE4BC /* prayingMantis.jpg */,
 				A2A3BCC51C81AA6A006BE4BC /* roach.jpg */,
 				A2A3BCC61C81AA6A006BE4BC /* robberFly.jpg */,
-				A2A3BCC71C81AA6A006BE4BC /* ScaryBug.swift */,
 				A2A3BCC81C81AA6A006BE4BC /* scorpion.jpg */,
 				A2A3BCC91C81AA6A006BE4BC /* shieldBug.jpg */,
 				A2A3BCCA1C81AA6A006BE4BC /* shockedface2_empty.png */,
@@ -118,6 +117,14 @@
 				A2A3BCCE1C81AA6A006BE4BC /* wolfSpider.jpg */,
 			);
 			path = "Challenge Resources";
+			sourceTree = "<group>";
+		};
+		A2A3BCE91C81ADE4006BE4BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2A3BCC71C81AA6A006BE4BC /* ScaryBug.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		D34F17FF1BC4506900A09B8C = {
@@ -139,10 +146,11 @@
 		D34F180A1BC4506900A09B8C /* Scary Bugs */ = {
 			isa = PBXGroup;
 			children = (
-				A2A3BCB41C81AA6A006BE4BC /* Challenge Resources */,
+				A2A3BCE91C81ADE4006BE4BC /* Model */,
 				D34F180B1BC4506900A09B8C /* AppDelegate.swift */,
 				D34F180D1BC4506900A09B8C /* ViewController.swift */,
 				D34F180F1BC4506900A09B8C /* Main.storyboard */,
+				A2A3BCB41C81AA6A006BE4BC /* Challenge Resources */,
 				D34F18121BC4506900A09B8C /* Assets.xcassets */,
 				D34F18141BC4506900A09B8C /* LaunchScreen.storyboard */,
 				D34F18171BC4506900A09B8C /* Info.plist */,

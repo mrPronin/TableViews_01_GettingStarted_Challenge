@@ -23,17 +23,41 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-  }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
-
+    
+    // MARK: - Vars
+    var bugs = [ScaryBug]()
+    
+    // MARK: - UIViewController
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        automaticallyAdjustsScrollViewInsets = false
+        
+        bugs = ScaryBug.bugs()
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
 }
 
+extension ViewController: UITableViewDataSource {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return bugs.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("BugCell", forIndexPath: indexPath)
+        let bug = bugs[indexPath.row]
+        cell.textLabel?.text = bug.name
+        cell.detailTextLabel?.text = ScaryBug.scaryFactorToString(bug.howScary)
+        if let bugImage = bug.image {
+            cell.imageView?.image = bugImage
+        }
+        return cell
+    }
+}
